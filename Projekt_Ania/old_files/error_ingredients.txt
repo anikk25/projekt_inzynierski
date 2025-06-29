@@ -1,0 +1,366 @@
+without checkbox:
+Dla substancji butyrospermumparkii butter nie znaleziono nazwy INCI.
+Dla substancji butyrospermumparkii butter nie znaleziono żadnych funkcji.
+Dla substancji a scorbyl glucoside nie znaleziono nazwy INCI.
+Dla substancji a scorbyl glucoside nie znaleziono żadnych funkcji.
+Dla substancji ceateryl alcohol nie znaleziono nazwy INCI.
+Dla substancji ceateryl alcohol nie znaleziono żadnych funkcji.
+Dla substancji 1.2-hexanediol nie znaleziono nazwy INCI.
+Dla substancji 1.2-hexanediol nie znaleziono żadnych funkcji.
+Dla substancji kigellia africana fruit extract nie znaleziono nazwy INCI.
+Dla substancji kigellia africana fruit extract nie znaleziono żadnych funkcji.
+Dla substancji citronallol nie znaleziono nazwy INCI.
+Dla substancji citronallol nie znaleziono żadnych funkcji.
+Dla substancji peg/ppg-18/18 dimethicone nie znaleziono nazwy INCI.
+Dla substancji peg/ppg-18/18 dimethicone nie znaleziono żadnych funkcji.
+Dla substancji pseudozyma epicola/argania spinosa kernel oil ferment filtrate nie znaleziono nazwy INCI.
+Dla substancji pseudozyma epicola/argania spinosa kernel oil ferment filtrate nie znaleziono żadnych funkcji.
+Dla substancji cetyl trimethyl ammonium chloride nie znaleziono nazwy INCI.
+Dla substancji cetyl trimethyl ammonium chloride nie znaleziono żadnych funkcji.
+Dla substancji glycine soja oil / soybean oil nie znaleziono nazwy INCI.
+Dla substancji glycine soja oil / soybean oil nie znaleziono żadnych funkcji.
+Dla substancji saccharomyces/xylinum/green tea ferment nie znaleziono nazwy INCI.
+Dla substancji saccharomyces/xylinum/green tea ferment nie znaleziono żadnych funkcji.
+Dla substancji hibiscus milk nie znaleziono nazwy INCI.
+Dla substancji hibiscus milk nie znaleziono żadnych funkcji.
+Dla substancji lauryl peg/ppg-18/18 methicone nie znaleziono nazwy INCI.
+Dla substancji lauryl peg/ppg-18/18 methicone nie znaleziono żadnych funkcji.
+Dla substancji xanthan gum lactic acid nie znaleziono nazwy INCI.
+Dla substancji xanthan gum lactic acid nie znaleziono żadnych funkcji.
+Dla substancji cetyl esthers nie znaleziono nazwy INCI.
+Dla substancji cetyl esthers nie znaleziono żadnych funkcji.
+Dla substancji ammonium acryloyldimethyltaurate/ vp copolymer nie znaleziono nazwy INCI.
+Dla substancji ammonium acryloyldimethyltaurate/ vp copolymer nie znaleziono żadnych funkcji.
+Dla substancji 1.2- hexanediol nie znaleziono nazwy INCI.
+Dla substancji 1.2- hexanediol nie znaleziono żadnych funkcji.
+Dla substancji malva sylvestris flower/leaf extract nie znaleziono nazwy INCI.
+Dla substancji malva sylvestris flower/leaf extract nie znaleziono żadnych funkcji.
+Dla substancji pseudozyma epicola/argania spinosa kernel oil/camellia japonica seed oil/camellia sinensis seed oil/sunflower seed oil/sweet almond oil ferment extract filtrate nie znaleziono nazwy INCI.
+Dla substancji pseudozyma epicola/argania spinosa kernel oil/camellia japonica seed oil/camellia sinensis seed oil/sunflower seed oil/sweet almond oil ferment extract filtrate nie znaleziono żadnych funkcji.
+Dla substancji ptychopetalum olacoides bark/stem extract nie znaleziono nazwy INCI.
+Dla substancji ptychopetalum olacoides bark/stem extract nie znaleziono żadnych funkcji.
+Dla substancji capryloyl glycerin/sebacic acid copolymer nie znaleziono nazwy INCI.
+Dla substancji capryloyl glycerin/sebacic acid copolymer nie znaleziono żadnych funkcji.
+Dla substancji equesetum arvense extract nie znaleziono nazwy INCI.
+Dla substancji equesetum arvense extract nie znaleziono żadnych funkcji.
+Dla substancji isoamyl cocate nie znaleziono nazwy INCI.
+Dla substancji isoamyl cocate nie znaleziono żadnych funkcji.
+Dla substancji peg-180 elaeis guineensis oil / palm oil nie znaleziono nazwy INCI.
+Dla substancji peg-180 elaeis guineensis oil / palm oil nie znaleziono żadnych funkcji.
+Dla substancji musa paradisiaca fruit juice / banana fruit juice nie znaleziono nazwy INCI.
+Dla substancji musa paradisiaca fruit juice / banana fruit juice nie znaleziono żadnych funkcji.
+Dla substancji tocopherol oil nie znaleziono nazwy INCI.
+Dla substancji tocopherol oil nie znaleziono żadnych funkcji.
+Dla substancji alcohol denatparfum nie znaleziono nazwy INCI.
+Dla substancji alcohol denatparfum nie znaleziono żadnych funkcji.
+Dla substancji hydrolysed wheatprotein nie znaleziono nazwy INCI.
+Dla substancji hydrolysed wheatprotein nie znaleziono żadnych funkcji.
+Dla substancji aloe vera gel nie znaleziono nazwy INCI.
+Dla substancji aloe vera gel nie znaleziono żadnych funkcji.
+Dla substancji polyglyceryl-3 dicitrate/stearate nie znaleziono nazwy INCI.
+Dla substancji polyglyceryl-3 dicitrate/stearate nie znaleziono żadnych funkcji.
+Dla substancji pyridoxine hci nie znaleziono nazwy INCI.
+Dla substancji pyridoxine hci nie znaleziono żadnych funkcji.
+Dla substancji avena sativa kernel extract / oat kernel extract nie znaleziono nazwy INCI.
+Dla substancji avena sativa kernel extract / oat kernel extract nie znaleziono żadnych funkcji.
+Dla substancji helianthus annuus seed oil / sunflower seed oil nie znaleziono nazwy INCI.
+Dla substancji helianthus annuus seed oil / sunflower seed oil nie znaleziono żadnych funkcji.
+Dla substancji lisine nie znaleziono nazwy INCI.
+Dla substancji lisine nie znaleziono żadnych funkcji.
+Dla substancji coco- caprylate/caprate nie znaleziono nazwy INCI.
+Dla substancji coco- caprylate/caprate nie znaleziono żadnych funkcji.
+Dla substancji sodium cocyl glutamate nie znaleziono nazwy INCI.
+Dla substancji sodium cocyl glutamate nie znaleziono żadnych funkcji.
+Dla substancji bis-diisopropanolamino-pg-propyl dimethicone/bis-isobutyl peg-14 copolymer nie znaleziono nazwy INCI.
+Dla substancji bis-diisopropanolamino-pg-propyl dimethicone/bis-isobutyl peg-14 copolymer nie znaleziono żadnych funkcji.   
+Dla substancji coco-caprylate/caprate nie znaleziono nazwy INCI.
+Dla substancji coco-caprylate/caprate nie znaleziono żadnych funkcji.
+Dla substancji pcacetrimonium chloride nie znaleziono nazwy INCI.
+Dla substancji pcacetrimonium chloride nie znaleziono żadnych funkcji.
+Dla substancji helianthus annus seed extract nie znaleziono nazwy INCI.
+Dla substancji helianthus annus seed extract nie znaleziono żadnych funkcji.
+Dla substancji behenyl/stearyl aminopropanediol esters nie znaleziono nazwy INCI.
+Dla substancji behenyl/stearyl aminopropanediol esters nie znaleziono żadnych funkcji.
+Dla substancji ethylhexylglyerin nie znaleziono nazwy INCI.
+Dla substancji ethylhexylglyerin nie znaleziono żadnych funkcji.
+Dla substancji helianthus annus officinalis flos extract nie znaleziono nazwy INCI.
+Dla substancji helianthus annus officinalis flos extract nie znaleziono żadnych funkcji.
+Dla substancji urtica dioica seed oil nie znaleziono nazwy INCI.
+Dla substancji urtica dioica seed oil nie znaleziono żadnych funkcji.
+Dla substancji tocopheryl linoleate/oleate nie znaleziono nazwy INCI.
+Dla substancji tocopheryl linoleate/oleate nie znaleziono żadnych funkcji.
+Dla substancji saberry nie znaleziono nazwy INCI.
+Dla substancji saberry nie znaleziono żadnych funkcji.
+Dla substancji gluceryl laurate nie znaleziono nazwy INCI.
+Dla substancji gluceryl laurate nie znaleziono żadnych funkcji.
+Dla substancji d-panthenol nie znaleziono nazwy INCI.
+Dla substancji d-panthenol nie znaleziono żadnych funkcji.
+Dla substancji parfum/fragrance nie znaleziono nazwy INCI.
+Dla substancji parfum/fragrance nie znaleziono żadnych funkcji.
+Dla substancji bis-diisopropanolamino-pg-propyl disiloxane/bis-vinyl dimethicone copolymer nie znaleziono nazwy INCI.
+Dla substancji bis-diisopropanolamino-pg-propyl disiloxane/bis-vinyl dimethicone copolymer nie znaleziono żadnych funkcji.  
+Dla substancji coco-c apryl ate /c apr ate nie znaleziono nazwy INCI.
+Dla substancji coco-c apryl ate /c apr ate nie znaleziono żadnych funkcji.
+Dla substancji triticium vulgare gem extract nie znaleziono nazwy INCI.
+Dla substancji triticium vulgare gem extract nie znaleziono żadnych funkcji.
+Dla substancji nasturtium officinale leaf/stem extract nie znaleziono nazwy INCI.
+Dla substancji nasturtium officinale leaf/stem extract nie znaleziono żadnych funkcji.
+Dla substancji camomilla recutita flower extract nie znaleziono nazwy INCI.
+Dla substancji camomilla recutita flower extract nie znaleziono żadnych funkcji.
+Dla substancji cymbopogon martinii oil nie znaleziono nazwy INCI.
+Dla substancji cymbopogon martinii oil nie znaleziono żadnych funkcji.
+Dla substancji peg-8/smdi copolymer nie znaleziono nazwy INCI.
+Dla substancji peg-8/smdi copolymer nie znaleziono żadnych funkcji.
+Dla substancji butyrospermum parkii butter / shea butter nie znaleziono nazwy INCI.
+Dla substancji butyrospermum parkii butter / shea butter nie znaleziono żadnych funkcji.
+Dla substancji caprylic/capric triglyceride nie znaleziono nazwy INCI.
+Dla substancji caprylic/capric triglyceride nie znaleziono żadnych funkcji.
+Dla substancji laury/myristyl polyricinoleate nie znaleziono nazwy INCI.
+Dla substancji laury/myristyl polyricinoleate nie znaleziono żadnych funkcji.
+Dla substancji alpha-isomethyl lonone nie znaleziono nazwy INCI.
+Dla substancji alpha-isomethyl lonone nie znaleziono żadnych funkcji.
+Dla substancji punicum granatum pericarp extract nie znaleziono nazwy INCI.
+Dla substancji punicum granatum pericarp extract nie znaleziono żadnych funkcji.
+Dla substancji aqua/water nie znaleziono nazwy INCI.
+Dla substancji aqua/water nie znaleziono żadnych funkcji.
+Dla substancji eugenia caryophyllata flower oil nie znaleziono nazwy INCI.
+Dla substancji eugenia caryophyllata flower oil nie znaleziono żadnych funkcji.
+Dla substancji caprylyl/capryl glucoside nie znaleziono nazwy INCI.
+Dla substancji caprylyl/capryl glucoside nie znaleziono żadnych funkcji.
+Dla substancji cetyl alkohol nie znaleziono nazwy INCI.
+Dla substancji cetyl alkohol nie znaleziono żadnych funkcji.
+Dla substancji sillica) nie znaleziono nazwy INCI.
+Dla substancji sillica) nie znaleziono żadnych funkcji.
+Dla substancji organic hybrid sunflower oil nie znaleziono nazwy INCI.
+Dla substancji organic hybrid sunflower oil nie znaleziono żadnych funkcji.
+Dla substancji behen-trimonium nie znaleziono nazwy INCI.
+Dla substancji behen-trimonium nie znaleziono żadnych funkcji.
+Dla substancji hydroxypropyl guar hydroxypropyltrymonium chloride nie znaleziono nazwy INCI.
+Dla substancji hydroxypropyl guar hydroxypropyltrymonium chloride nie znaleziono żadnych funkcji.
+Dla substancji eucalypus cirtriodora oil nie znaleziono nazwy INCI.
+Dla substancji eucalypus cirtriodora oil nie znaleziono żadnych funkcji.
+Dla substancji behentimonium methosulfate nie znaleziono nazwy INCI.
+Dla substancji behentimonium methosulfate nie znaleziono żadnych funkcji.
+Dla substancji cetearyl alkohol nie znaleziono nazwy INCI.
+Dla substancji cetearyl alkohol nie znaleziono żadnych funkcji.
+Dla substancji polyglyceryl-6 palmitate/succinate nie znaleziono nazwy INCI.
+Dla substancji polyglyceryl-6 palmitate/succinate nie znaleziono żadnych funkcji.
+Dla substancji adansonia digitate fruit extract nie znaleziono nazwy INCI.
+Dla substancji adansonia digitate fruit extract nie znaleziono żadnych funkcji.
+Dla substancji alcohol denatmyristyl alcohol nie znaleziono nazwy INCI.
+Dla substancji alcohol denatmyristyl alcohol nie znaleziono żadnych funkcji.
+Dla substancji biotyn nie znaleziono nazwy INCI.
+Dla substancji biotyn nie znaleziono żadnych funkcji.
+Dla substancji organic aloe vera nie znaleziono nazwy INCI.
+Dla substancji organic aloe vera nie znaleziono żadnych funkcji.
+Dla substancji oryza sativa starch / rice starch nie znaleziono nazwy INCI.
+Dla substancji oryza sativa starch / rice starch nie znaleziono żadnych funkcji.
+Dla substancji aqua/water/eau nie znaleziono nazwy INCI.
+Dla substancji aqua/water/eau nie znaleziono żadnych funkcji.
+Dla substancji lactobacillus/rice ferment filtrate nie znaleziono nazwy INCI.
+Dla substancji lactobacillus/rice ferment filtrate nie znaleziono żadnych funkcji.
+Dla substancji parfum / fragrance nie znaleziono nazwy INCI.
+Dla substancji parfum / fragrance nie znaleziono żadnych funkcji.
+Dla substancji lauryl/myristyl polyricinoleate nie znaleziono nazwy INCI.
+Dla substancji lauryl/myristyl polyricinoleate nie znaleziono żadnych funkcji.
+Dla substancji lecitin nie znaleziono nazwy INCI.
+Dla substancji lecitin nie znaleziono żadnych funkcji.
+Dla substancji lactobacillus/arundinaria gigantea leaf ferment filtrate nie znaleziono nazwy INCI.
+Dla substancji lactobacillus/arundinaria gigantea leaf ferment filtrate nie znaleziono żadnych funkcji.
+Dla substancji butyrospernum parkii oil nie znaleziono nazwy INCI.
+Dla substancji butyrospernum parkii oil nie znaleziono żadnych funkcji.
+Dla substancji caprylic/ capric/ succinic triglyceride nie znaleziono nazwy INCI.
+Dla substancji caprylic/ capric/ succinic triglyceride nie znaleziono żadnych funkcji.
+Dla substancji caprylic/capric triglyceryde nie znaleziono nazwy INCI.
+Dla substancji caprylic/capric triglyceryde nie znaleziono żadnych funkcji.
+Dla substancji hydrogenated castor oil/sebacic acid copolymer nie znaleziono nazwy INCI.
+Dla substancji hydrogenated castor oil/sebacic acid copolymer nie znaleziono żadnych funkcji.
+Dla substancji pseudozyma epicola/camellia sinensis seed oil ferment extract filtrate nie znaleziono nazwy INCI.
+Dla substancji pseudozyma epicola/camellia sinensis seed oil ferment extract filtrate nie znaleziono żadnych funkcji.       
+Dla substancji avena sativa leaf/stalk extract nie znaleziono nazwy INCI.
+Dla substancji avena sativa leaf/stalk extract nie znaleziono żadnych funkcji.
+Dla substancji arctium lappa phenoxyethanol nie znaleziono nazwy INCI.
+Dla substancji arctium lappa phenoxyethanol nie znaleziono żadnych funkcji.
+Dla substancji coconut cream nie znaleziono nazwy INCI.
+Dla substancji coconut cream nie znaleziono żadnych funkcji.
+Dla substancji hydroliyzed wheat bran nie znaleziono nazwy INCI.
+Dla substancji hydroliyzed wheat bran nie znaleziono żadnych funkcji.
+Dla substancji aqua polyglyceryl-3-methylglucose distearate nie znaleziono nazwy INCI.
+Dla substancji aqua polyglyceryl-3-methylglucose distearate nie znaleziono żadnych funkcji.
+Dla substancji parfum fragrance nie znaleziono nazwy INCI.
+Dla substancji parfum fragrance nie znaleziono żadnych funkcji.
+Dla substancji natural fragrance nie znaleziono nazwy INCI.
+Dla substancji natural fragrance nie znaleziono żadnych funkcji.
+Dla substancji fragrance/parfum nie znaleziono nazwy INCI.
+Dla substancji fragrance/parfum nie znaleziono żadnych funkcji.
+Dla substancji behen-trimonium chloride nie znaleziono nazwy INCI.
+Dla substancji behen-trimonium chloride nie znaleziono żadnych funkcji.
+Dla substancji cetostearyl alcohol nie znaleziono nazwy INCI.
+Dla substancji cetostearyl alcohol nie znaleziono żadnych funkcji.
+Dla substancji argania spinosa oil/argania spinosa kernel oil nie znaleziono nazwy INCI.
+Dla substancji argania spinosa oil/argania spinosa kernel oil nie znaleziono żadnych funkcji.
+Dla substancji peg-40 hydrogenated castrol oil nie znaleziono nazwy INCI.
+Dla substancji peg-40 hydrogenated castrol oil nie znaleziono żadnych funkcji.
+Dla substancji triperalgonin nie znaleziono nazwy INCI.
+Dla substancji triperalgonin nie znaleziono żadnych funkcji.
+Dla substancji leuconostoc/radish root ferment filtrate nie znaleziono nazwy INCI.
+Dla substancji leuconostoc/radish root ferment filtrate nie znaleziono żadnych funkcji.
+Dla substancji caprylic /capric triglyceride nie znaleziono nazwy INCI.
+Dla substancji caprylic /capric triglyceride nie znaleziono żadnych funkcji.
+Dla substancji hydroxyethylcelulose nie znaleziono nazwy INCI.
+Dla substancji hydroxyethylcelulose nie znaleziono żadnych funkcji.
+Dla substancji hydrogenated ethylhexyl olivate hydrolyzed rice protein nie znaleziono nazwy INCI.
+Dla substancji hydrogenated ethylhexyl olivate hydrolyzed rice protein nie znaleziono żadnych funkcji.
+Dla substancji bis-(isostearoyl/oleoyl isopropyl) dimonium methosulfate nie znaleziono nazwy INCI.
+Dla substancji bis-(isostearoyl/oleoyl isopropyl) dimonium methosulfate nie znaleziono żadnych funkcji.
+Dla substancji pinus sylvestris bud water nie znaleziono nazwy INCI.
+Dla substancji pinus sylvestris bud water nie znaleziono żadnych funkcji.
+Dla substancji zinc sulfite nie znaleziono nazwy INCI.
+Dla substancji zinc sulfite nie znaleziono żadnych funkcji.
+Dla substancji behentrymonium chloride nie znaleziono nazwy INCI.
+Dla substancji behentrymonium chloride nie znaleziono żadnych funkcji.
+Dla substancji pca hydroxypropyl guar hydroxypropyltrimonium chloride nie znaleziono nazwy INCI.
+Dla substancji pca hydroxypropyl guar hydroxypropyltrimonium chloride nie znaleziono żadnych funkcji.
+Dla substancji thymus serpyllum herb water nie znaleziono nazwy INCI.
+Dla substancji thymus serpyllum herb water nie znaleziono żadnych funkcji.
+Dla substancji aqua / water nie znaleziono nazwy INCI.
+Dla substancji aqua / water nie znaleziono żadnych funkcji.
+Dla substancji divinyldimethicone/dimethicone copolymer nie znaleziono nazwy INCI.
+Dla substancji divinyldimethicone/dimethicone copolymer nie znaleziono żadnych funkcji.
+Dla substancji sodium choride nie znaleziono nazwy INCI.
+Dla substancji sodium choride nie znaleziono żadnych funkcji.
+Dla substancji cannabis sativa leaf/stem water nie znaleziono nazwy INCI.
+Dla substancji cannabis sativa leaf/stem water nie znaleziono żadnych funkcji.
+Dla substancji glyearyl oleate nie znaleziono nazwy INCI.
+Dla substancji glyearyl oleate nie znaleziono żadnych funkcji.
+Dla substancji aqua water eau nie znaleziono nazwy INCI.
+Dla substancji aqua water eau nie znaleziono żadnych funkcji.
+Dla substancji 1067914 ps aqua / water / eau nie znaleziono nazwy INCI.
+Dla substancji 1067914 ps aqua / water / eau nie znaleziono żadnych funkcji.
+Dla substancji saccharomyces/rice ferment filtrate nie znaleziono nazwy INCI.
+Dla substancji saccharomyces/rice ferment filtrate nie znaleziono żadnych funkcji.
+Dla substancji cironellol nie znaleziono nazwy INCI.
+Dla substancji cironellol nie znaleziono żadnych funkcji.
+Dla substancji vitamins complex nie znaleziono nazwy INCI.
+Dla substancji vitamins complex nie znaleziono żadnych funkcji.
+Dla substancji 1.3-butylene glycol nie znaleziono nazwy INCI.
+Dla substancji 1.3-butylene glycol nie znaleziono żadnych funkcji.
+Dla substancji montmorillonite cocamidopropyl betaine nie znaleziono nazwy INCI.
+Dla substancji montmorillonite cocamidopropyl betaine nie znaleziono żadnych funkcji.
+Dla substancji parfum da agricoltura biologica senza allergeni nie znaleziono nazwy INCI.
+Dla substancji parfum da agricoltura biologica senza allergeni nie znaleziono żadnych funkcji.
+
+
+With checkbox:
+Dla substancji citronallol nie znaleziono nazwy INCI.
+Dla substancji citronallol nie znaleziono żadnych funkcji.
+Dla substancji pseudozyma epicola/argania spinosa kernel oil ferment filtrate nie znaleziono nazwy INCI.
+Dla substancji pseudozyma epicola/argania spinosa kernel oil ferment filtrate nie znaleziono żadnych funkcji.
+Dla substancji glycine soja oil / soybean oil nie znaleziono nazwy INCI.
+Dla substancji glycine soja oil / soybean oil nie znaleziono żadnych funkcji.
+Dla substancji ammonium acryloyldimethyltaurate/ vp copolymer nie znaleziono nazwy INCI.
+Dla substancji ammonium acryloyldimethyltaurate/ vp copolymer nie znaleziono żadnych funkcji.
+Dla substancji malva sylvestris flower/leaf extract nie znaleziono nazwy INCI.
+Dla substancji malva sylvestris flower/leaf extract nie znaleziono żadnych funkcji.
+Dla substancji pseudozyma epicola/argania spinosa kernel oil/camellia japonica seed oil/camellia sinensis seed oil/sunflower seed oil/sweet almond oil ferment extract filtrate nie znaleziono nazwy INCI.
+Dla substancji pseudozyma epicola/argania spinosa kernel oil/camellia japonica seed oil/camellia sinensis seed oil/sunflower seed oil/sweet almond oil ferment extract filtrate nie znaleziono żadnych funkcji.
+Dla substancji ptychopetalum olacoides bark/stem extract nie znaleziono nazwy INCI.
+Dla substancji ptychopetalum olacoides bark/stem extract nie znaleziono żadnych funkcji.
+Dla substancji capryloyl glycerin/sebacic acid copolymer nie znaleziono nazwy INCI.
+Dla substancji capryloyl glycerin/sebacic acid copolymer nie znaleziono żadnych funkcji.
+Dla substancji peg-180 elaeis guineensis oil / palm oil nie znaleziono nazwy INCI.
+Dla substancji peg-180 elaeis guineensis oil / palm oil nie znaleziono żadnych funkcji.
+Dla substancji musa paradisiaca fruit juice / banana fruit juice nie znaleziono nazwy INCI.
+Dla substancji musa paradisiaca fruit juice / banana fruit juice nie znaleziono żadnych funkcji.
+Dla substancji polyglyceryl-3 dicitrate/stearate nie znaleziono nazwy INCI.
+Dla substancji polyglyceryl-3 dicitrate/stearate nie znaleziono żadnych funkcji.
+Dla substancji avena sativa kernel extract / oat kernel extract nie znaleziono nazwy INCI.
+Dla substancji avena sativa kernel extract / oat kernel extract nie znaleziono żadnych funkcji.
+Dla substancji helianthus annuus seed oil / sunflower seed oil nie znaleziono nazwy INCI.
+Dla substancji helianthus annuus seed oil / sunflower seed oil nie znaleziono żadnych funkcji.
+Dla substancji lisine nie znaleziono nazwy INCI.
+Dla substancji lisine nie znaleziono żadnych funkcji.
+Dla substancji coco- caprylate/caprate nie znaleziono nazwy INCI.
+Dla substancji coco- caprylate/caprate nie znaleziono żadnych funkcji.
+Dla substancji bis-diisopropanolamino-pg-propyl dimethicone/bis-isobutyl peg-14 copolymer nie znaleziono nazwy INCI.
+Dla substancji bis-diisopropanolamino-pg-propyl dimethicone/bis-isobutyl peg-14 copolymer nie znaleziono żadnych funkcji.   
+Dla substancji coco-caprylate/caprate nie znaleziono nazwy INCI.
+Dla substancji coco-caprylate/caprate nie znaleziono żadnych funkcji.
+Dla substancji behenyl/stearyl aminopropanediol esters nie znaleziono nazwy INCI.
+Dla substancji behenyl/stearyl aminopropanediol esters nie znaleziono żadnych funkcji.
+Dla substancji ethylhexylglyerin nie znaleziono nazwy INCI.
+Dla substancji ethylhexylglyerin nie znaleziono żadnych funkcji.
+Dla substancji tocopheryl linoleate/oleate nie znaleziono nazwy INCI.
+Dla substancji tocopheryl linoleate/oleate nie znaleziono żadnych funkcji.
+Dla substancji saberry nie znaleziono nazwy INCI.
+Dla substancji saberry nie znaleziono żadnych funkcji.
+Dla substancji parfum/fragrance nie znaleziono nazwy INCI.
+Dla substancji parfum/fragrance nie znaleziono żadnych funkcji.
+Dla substancji bis-diisopropanolamino-pg-propyl disiloxane/bis-vinyl dimethicone copolymer nie znaleziono nazwy INCI.
+Dla substancji bis-diisopropanolamino-pg-propyl disiloxane/bis-vinyl dimethicone copolymer nie znaleziono żadnych funkcji.  
+Dla substancji coco-c apryl ate /c apr ate nie znaleziono nazwy INCI.
+Dla substancji coco-c apryl ate /c apr ate nie znaleziono żadnych funkcji.
+Dla substancji nasturtium officinale leaf/stem extract nie znaleziono nazwy INCI.
+Dla substancji nasturtium officinale leaf/stem extract nie znaleziono żadnych funkcji.
+Dla substancji peg-8/smdi copolymer nie znaleziono nazwy INCI.
+Dla substancji peg-8/smdi copolymer nie znaleziono żadnych funkcji.
+Dla substancji butyrospermum parkii butter / shea butter nie znaleziono nazwy INCI.
+Dla substancji butyrospermum parkii butter / shea butter nie znaleziono żadnych funkcji.
+Dla substancji caprylic/capric triglyceride nie znaleziono nazwy INCI.
+Dla substancji caprylic/capric triglyceride nie znaleziono żadnych funkcji.
+Dla substancji laury/myristyl polyricinoleate nie znaleziono nazwy INCI.
+Dla substancji laury/myristyl polyricinoleate nie znaleziono żadnych funkcji.
+Dla substancji aqua/water nie znaleziono nazwy INCI.
+Dla substancji aqua/water nie znaleziono żadnych funkcji.
+Dla substancji caprylyl/capryl glucoside nie znaleziono nazwy INCI.
+Dla substancji caprylyl/capryl glucoside nie znaleziono żadnych funkcji.
+Dla substancji sillica) nie znaleziono nazwy INCI.
+Dla substancji sillica) nie znaleziono żadnych funkcji.
+Dla substancji polyglyceryl-6 palmitate/succinate nie znaleziono nazwy INCI.
+Dla substancji polyglyceryl-6 palmitate/succinate nie znaleziono żadnych funkcji.
+Dla substancji biotyn nie znaleziono nazwy INCI.
+Dla substancji biotyn nie znaleziono żadnych funkcji.
+Dla substancji oryza sativa starch / rice starch nie znaleziono nazwy INCI.
+Dla substancji oryza sativa starch / rice starch nie znaleziono żadnych funkcji.
+Dla substancji lactobacillus/rice ferment filtrate nie znaleziono nazwy INCI.
+Dla substancji lactobacillus/rice ferment filtrate nie znaleziono żadnych funkcji.
+Dla substancji parfum / fragrance nie znaleziono nazwy INCI.
+Dla substancji parfum / fragrance nie znaleziono żadnych funkcji.
+Dla substancji lauryl/myristyl polyricinoleate nie znaleziono nazwy INCI.
+Dla substancji lauryl/myristyl polyricinoleate nie znaleziono żadnych funkcji.
+Dla substancji lecitin nie znaleziono nazwy INCI.
+Dla substancji lecitin nie znaleziono żadnych funkcji.
+Dla substancji lactobacillus/arundinaria gigantea leaf ferment filtrate nie znaleziono nazwy INCI.
+Dla substancji lactobacillus/arundinaria gigantea leaf ferment filtrate nie znaleziono żadnych funkcji.
+Dla substancji caprylic/capric triglyceryde nie znaleziono nazwy INCI.
+Dla substancji caprylic/capric triglyceryde nie znaleziono żadnych funkcji.
+Dla substancji hydrogenated castor oil/sebacic acid copolymer nie znaleziono nazwy INCI.
+Dla substancji hydrogenated castor oil/sebacic acid copolymer nie znaleziono żadnych funkcji.
+Dla substancji pseudozyma epicola/camellia sinensis seed oil ferment extract filtrate nie znaleziono nazwy INCI.
+Dla substancji pseudozyma epicola/camellia sinensis seed oil ferment extract filtrate nie znaleziono żadnych funkcji.       
+Dla substancji avena sativa leaf/stalk extract nie znaleziono nazwy INCI.
+Dla substancji avena sativa leaf/stalk extract nie znaleziono żadnych funkcji.
+Dla substancji fragrance/parfum nie znaleziono nazwy INCI.
+Dla substancji fragrance/parfum nie znaleziono żadnych funkcji.
+Dla substancji argania spinosa oil/argania spinosa kernel oil nie znaleziono nazwy INCI.
+Dla substancji argania spinosa oil/argania spinosa kernel oil nie znaleziono żadnych funkcji.
+Dla substancji triperalgonin nie znaleziono nazwy INCI.
+Dla substancji triperalgonin nie znaleziono żadnych funkcji.
+Dla substancji leuconostoc/radish root ferment filtrate nie znaleziono nazwy INCI.
+Dla substancji leuconostoc/radish root ferment filtrate nie znaleziono żadnych funkcji.
+Dla substancji caprylic /capric triglyceride nie znaleziono nazwy INCI.
+Dla substancji caprylic /capric triglyceride nie znaleziono żadnych funkcji.
+Dla substancji hydroxyethylcelulose nie znaleziono nazwy INCI.
+Dla substancji hydroxyethylcelulose nie znaleziono żadnych funkcji.
+Dla substancji bis-(isostearoyl/oleoyl isopropyl) dimonium methosulfate nie znaleziono nazwy INCI.
+Dla substancji bis-(isostearoyl/oleoyl isopropyl) dimonium methosulfate nie znaleziono żadnych funkcji.
+Dla substancji aqua / water nie znaleziono nazwy INCI.
+Dla substancji aqua / water nie znaleziono żadnych funkcji.
+Dla substancji divinyldimethicone/dimethicone copolymer nie znaleziono nazwy INCI.
+Dla substancji divinyldimethicone/dimethicone copolymer nie znaleziono żadnych funkcji.
+Dla substancji cannabis sativa leaf/stem water nie znaleziono nazwy INCI.
+Dla substancji cannabis sativa leaf/stem water nie znaleziono żadnych funkcji.
+Dla substancji saccharomyces/rice ferment filtrate nie znaleziono nazwy INCI.
+Dla substancji saccharomyces/rice ferment filtrate nie znaleziono żadnych funkcji.
+Dla substancji cironellol nie znaleziono nazwy INCI.
+Dla substancji cironellol nie znaleziono żadnych funkcji.
