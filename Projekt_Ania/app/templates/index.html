@@ -11,6 +11,7 @@
     Odżywki
 </h1>
 <form action="/" method="GET" id="type_form">
+    <h3>Filtrowanie po typach:</h3>
     <input type="submit" name="conditioner_type" value="PEH" {% if website_state["last_conditioner_type"] == "PEH" %} disabled {% endif %}>
     <input type="submit" name="conditioner_type" value="PE" {% if website_state["last_conditioner_type"] == "PE" %} disabled {% endif %}>
     <input type="submit" name="conditioner_type" value="EH" {% if website_state["last_conditioner_type"] == "EH" %} disabled {% endif %}>
@@ -20,6 +21,19 @@
     <input type="submit" name="conditioner_type" value="H" disabled>
     <button type="submit" name="conditioner_type" value="ALL" {% if website_state["last_conditioner_type"] == "ALL" or "last_conditioner_type" not in website_state.keys() %} disabled {% endif %}>
         Wyczyść filtry
+    </button>
+</form>
+
+<form action="/" method="GET" id="price_sort">
+    <h3>Sortowanie po cenach:</h3>
+    <button type="submit" name="sort_order" value="ASC" {% if website_state["sort_order"] == "ASC" %} disabled {% endif %}>
+        Rosnąco
+    </button>
+    <button type="submit" name="sort_order" value="DESC" {% if website_state["sort_order"] == "DESC" %} disabled {% endif %}>
+        Malejąco
+    </button>
+    <button type="submit" name="sort_order" value="DEFAULT" {% if not website_state["sort_order"] or "sort_order" not in website_state.keys() %} disabled {% endif %}>
+        Domyślnie
     </button>
 </form>
 
