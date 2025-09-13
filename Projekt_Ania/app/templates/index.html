@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>
+    Wyszukiwarka odżywek
+</title>
+{% endblock %}
+
+{% block body %}
+<h1>
+    Odżywki
+</h1>
+<form action="/" method="GET" id="type_form">
+    <input type="submit" name="conditioner_type" value="PEH" {% if website_state["last_conditioner_type"] == "PEH" %} disabled {% endif %}>
+    <input type="submit" name="conditioner_type" value="PE" {% if website_state["last_conditioner_type"] == "PE" %} disabled {% endif %}>
+    <input type="submit" name="conditioner_type" value="EH" {% if website_state["last_conditioner_type"] == "EH" %} disabled {% endif %}>
+    <input type="submit" name="conditioner_type" value="PH" {% if website_state["last_conditioner_type"] == "PH" %} disabled {% endif %}>
+    <input type="submit" name="conditioner_type" value="P" disabled>
+    <input type="submit" name="conditioner_type" value="E" {% if website_state["last_conditioner_type"] == "E" %} disabled {% endif %}>
+    <input type="submit" name="conditioner_type" value="H" disabled>
+    <button type="submit" name="conditioner_type" value="ALL" {% if website_state["last_conditioner_type"] == "ALL" or "last_conditioner_type" not in website_state.keys() %} disabled {% endif %}>
+        Wyczyść filtry
+    </button>
+</form>
+
+<main>
+    {% for conditioner in conditioners %}
+    <a href="{{ conditioner.url }}" target="_blank">
+        <div class="conditioner">
+            <p>{{ conditioner.name }}</p>
+            <p>{{ conditioner.price }}</p>
+            <p>{{ conditioner.pred_type }}</p>
+        </div>
+    </a>
+    {% endfor %}
+</main>
+
+<form action="/" method="GET" id="pagination">
+
+    <button type="submit" name="page" value="first" {% if website_state["current_page"] == 1 %} disabled {% endif %}>
+        &lt;&lt;
+    </button>
+
+    <button type="submit" name="page" value="previous" {% if website_state["can_click_previous"] == False %} disabled {% endif %}>
+        &lt;
+    </button>
+
+    {{ website_state['current_page'] }} / {{ website_state['total_pages'] }}
+
+
+    <button type="submit" name="page" value="next" {% if website_state["can_click_next"] == False %} disabled {% endif %}>
+        &gt;
+    </button>
+
+    <button type="submit" name="page" value="last" {% if website_state["current_page"] == website_state['total_pages'] %} disabled {% endif %}>
+        &gt;&gt;
+    </button>
+
+</form>
+
+{% endblock %}
