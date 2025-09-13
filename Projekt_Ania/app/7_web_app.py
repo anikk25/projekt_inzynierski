@@ -8,6 +8,8 @@ db = SQLAlchemy(app)
 
 last_conditioner_type: None | str = None
 page: int = 1
+what_to_sort: None | str = None
+sort_order: None | str = None
 website_state: dict = {
     "can_click_previous": False,
     "can_click_next": True
@@ -26,7 +28,7 @@ class ConditionersDatabase(db.Model):
 
 @app.route("/", methods=['GET'])
 def index():
-    global last_conditioner_type, page, website_state
+    global last_conditioner_type, page, website_state, sort_order
     page_size = 25
 
     # Zmiana wyszukiwanego typu odżywki
@@ -59,11 +61,32 @@ def index():
     website_state['can_click_previous'] = False if page == 1 else True
     website_state['can_click_next'] = True if page*page_size < total_conditioners else False
 
+    
+    # Sortowanie danych po cenie
+    if 'sort_order' in request.args.keys():
+        if request.args['sort_order'] == 'ASC':
+            sort_order = "ASC"
+        elif request.args['sort_order'] == 'DESC':
+            sort_order = "DESC"
+        else:
+            sort_order = None
+        website_state['sort_order'] = sort_order
+
     # Filtrowanie danych
     if last_conditioner_type and last_conditioner_type != "ALL":
-        conditioners = ConditionersDatabase.query.where(ConditionersDatabase.pred_type == last_conditioner_type).order_by(ConditionersDatabase.name).limit(page_size).offset((page-1)*page_size).all()
+        if sort_order == "ASC":
+            conditioners = ConditionersDatabase.query.where(ConditionersDatabase.pred_type == last_conditioner_type).order_by(ConditionersDatabase.price.asc()).limit(page_size).offset((page-1)*page_size).all()
+        elif sort_order == "DESC":
+            conditioners = ConditionersDatabase.query.where(ConditionersDatabase.pred_type == last_conditioner_type).order_by(ConditionersDatabase.price.desc()).limit(page_size).offset((page-1)*page_size).all()
+        else:
+            conditioners = ConditionersDatabase.query.where(ConditionersDatabase.pred_type == last_conditioner_type).order_by(ConditionersDatabase.name).limit(page_size).offset((page-1)*page_size).all()
     else:
-        conditioners = ConditionersDatabase.query.order_by(ConditionersDatabase.name).limit(page_size).offset((page-1)*page_size).all()
+        if sort_order == "ASC":
+            conditioners = ConditionersDatabase.query.order_by(ConditionersDatabase.price.asc()).limit(page_size).offset((page-1)*page_size).all()
+        elif sort_order == "DESC":
+            conditioners = ConditionersDatabase.query.order_by(ConditionersDatabase.price.desc()).limit(page_size).offset((page-1)*page_size).all()
+        else:
+            conditioners = ConditionersDatabase.query.order_by(ConditionersDatabase.name).limit(page_size).offset((page-1)*page_size).all()
 
     return render_template('index.html', conditioners=conditioners, website_state=website_state)
 
