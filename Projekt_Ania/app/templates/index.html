@@ -37,6 +37,76 @@
     </button>
 </form>
 
+<form action="/" method="POST" id="hair_condition_form">
+    <h3>Rekomendacja odżywek na podstawie kondycji włosów:</h3>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <label class="switch">
+                <input type="checkbox" name='hair_condition' value="Nadmierne obciążenie">
+                <span class="slider round"></span>
+                Nadmierne obciążenie
+            </label>
+        </li>
+        <li class="list-group-item">
+            <label class="switch">
+                <input type="checkbox" name='hair_condition' value="Strączkowanie">
+                <span class="slider round"></span>
+                Strączkowanie
+            </label>
+        </li>
+        <li class="list-group-item">
+            <label class="switch">
+                <input type="checkbox" name='hair_condition' value="Matowość">
+                <span class="slider round"></span>
+                Matowość
+            </label>
+        </li>
+        <li class="list-group-item">
+            <label class="switch">
+                <input type="checkbox" name='hair_condition' value="Suchość">
+                <span class="slider round"></span>
+                Suchość
+            </label>
+        </li>
+        <li class="list-group-item">
+            <label class="switch">
+                <input type="checkbox" name='hair_condition' value="Łamanie się włosów">
+                <span class="slider round"></span>
+                Łamanie się włosów
+            </label>
+        </li>
+        <li class="list-group-item">
+            <label class="switch">
+                <input type="checkbox" name='hair_condition' value="Elektryzowanie">
+                <span class="slider round"></span>
+                Elektryzowanie
+            </label>
+        </li>
+        <li class="list-group-item">
+            <label class="switch">
+                <input type="checkbox" name='hair_condition' value="Puch">
+                <span class="slider round"></span>
+                Puch
+            </label>
+        </li>
+        <li class="list-group-item">
+            <label class="switch">
+                <input type="checkbox" name='hair_condition' value="Rozprostowanie skrętu">
+                <span class="slider round"></span>
+                Rozprostowanie skrętu
+            </label>
+        </li>
+        <li class="list-group-item">
+            <label class="switch">
+                <input type="checkbox" name='hair_condition' value="Szybkie przetłuszczanie">
+                <span class="slider round"></span>
+                Szybkie przetłuszczanie
+            </label>
+        </li>
+    </ul>
+    <button type="submit">Zatwierdź</button>
+</form>
+
 <main>
     {% for conditioner in conditioners %}
     <a href="{{ conditioner.url }}" target="_blank">
