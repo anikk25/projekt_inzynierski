@@ -8,12 +8,14 @@ db = SQLAlchemy(app)
 
 last_conditioner_type: None | str = None
 page: int = 1
-what_to_sort: None | str = None
 sort_order: None | str = None
 website_state: dict = {
     "can_click_previous": False,
     "can_click_next": True
 }
+p: int = 0
+e: int = 0
+h: int = 0
 
 class ConditionersDatabase(db.Model):
     url = db.Column(db.String(2048), primary_key=True, nullable=False)
@@ -26,10 +28,74 @@ class ConditionersDatabase(db.Model):
         return '<Conditioner %r>' % self.url
 
 
-@app.route("/", methods=['GET'])
+@app.route("/", methods=['GET','POST'])
 def index():
-    global last_conditioner_type, page, website_state, sort_order
+    global last_conditioner_type, page, website_state, sort_order, p, e, h
     page_size = 25
+    p = 0
+    e = 0
+    h = 0
+
+    # Rekomendacja typu odżywek
+
+    # Wyliczanie punktów do rekomendowanych typów odżywek na podstawie zaznaczonych kondycji włosów
+    if request.form.getlist('hair_condition'): # Jeśli została zaznaczona jakakolwiek opcja kondycji włosów
+        for condition in request.form.getlist('hair_condition'):
+            if condition == "Nadmierne obciążenie":
+                p+=1
+                h+=1
+            if condition == "Strączkowanie":
+                p+=1
+                h+=1
+            if condition == "Matowość":
+                p+=1
+                e+=1
+            if condition == "Suchość":
+                e+=1
+                h+=1
+            if condition == "Łamanie się włosów":
+                p+=1
+                e+=1
+            if condition == "Elektryzowanie":
+                p+=1
+                e+=1
+                h+=1
+            if condition == "Puch":
+                p+=1
+                e+=1
+            if condition == "Rozprostowanie skrętu":
+                p+=1
+            if condition == "Szybkie przetłuszczanie":
+                p+=1
+                h+=1
+
+        print(f'P:{p}, E:{e}, H:{h}')
+    
+        # Przypisanie, na podstawie punktów, rekomendowanego typu odżywki
+        if p > e and p > h:
+            last_conditioner_type = 'P'
+        if e > p and e > h:
+            last_conditioner_type = 'E'
+        if h > p and h > e:
+            last_conditioner_type = 'H'
+        if p == e and p > h:
+            last_conditioner_type = 'PE'
+        if p == h and p > e:
+            last_conditioner_type = 'PH'
+        if e == h and e > p:
+            last_conditioner_type = 'EH'
+        if p == e and e == h:
+            last_conditioner_type = 'PEH'
+        website_state['type_recommendation'] = last_conditioner_type
+        website_state['last_conditioner_type'] = last_conditioner_type
+        website_state['last_selected_hair_conditions'] = request.form.getlist('hair_condition')
+    elif not request.form.getlist('hair_condition') and not 'page' in request.args.keys() and not 'sort_order' in request.args.keys():
+        website_state['type_recommendation'] = None
+        website_state['last_selected_hair_conditions'] = []
+        if not 'conditioner_type' in request.args.keys():
+            website_state['last_conditioner_type'] = None
+            last_conditioner_type = None
+
 
     # Zmiana wyszukiwanego typu odżywki
     if 'conditioner_type' in request.args.keys():
@@ -44,7 +110,7 @@ def index():
 
     website_state['total_pages'] = ceil(total_conditioners/page_size)
     
-    if 'page' in request.args.keys():
+    if 'page' in request.args.keys():  # Ostatnio użytkownik chciał zmienić stronę
         if request.args['page'] == 'next':
             page += 1
         elif request.args['page'] == 'previous':
@@ -53,8 +119,9 @@ def index():
             page = 1
         elif request.args['page'] == 'last':
             page = website_state['total_pages']
-    else:
+    else:  # Użytkownik wykonał inną akcję niż zmiana strony
         page = 1
+
 
     website_state['current_page'] = page
 
@@ -87,6 +154,7 @@ def index():
             conditioners = ConditionersDatabase.query.order_by(ConditionersDatabase.price.desc()).limit(page_size).offset((page-1)*page_size).all()
         else:
             conditioners = ConditionersDatabase.query.order_by(ConditionersDatabase.name).limit(page_size).offset((page-1)*page_size).all()
+
 
     return render_template('index.html', conditioners=conditioners, website_state=website_state)
 
