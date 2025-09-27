@@ -36,7 +36,7 @@ def index():
     e = 0
     h = 0
 
-    # Rekomendacja typu odżywek
+    # Rekomendacja typu odżywki
 
     # Wyliczanie punktów do rekomendowanych typów odżywek na podstawie zaznaczonych kondycji włosów
     if request.form.getlist('hair_condition'): # Jeśli została zaznaczona jakakolwiek opcja kondycji włosów
@@ -68,8 +68,6 @@ def index():
             if condition == "Szybkie przetłuszczanie":
                 p+=1
                 h+=1
-
-        print(f'P:{p}, E:{e}, H:{h}')
     
         # Przypisanie, na podstawie punktów, rekomendowanego typu odżywki
         if p > e and p > h:
