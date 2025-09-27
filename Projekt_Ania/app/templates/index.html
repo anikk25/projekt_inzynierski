@@ -42,69 +42,71 @@
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <label class="switch">
-                <input type="checkbox" name='hair_condition' value="Nadmierne obciążenie">
+                <input type="checkbox" name='hair_condition' value="Nadmierne obciążenie" {% if "Nadmierne obciążenie" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
                 <span class="slider round"></span>
                 Nadmierne obciążenie
             </label>
         </li>
         <li class="list-group-item">
             <label class="switch">
-                <input type="checkbox" name='hair_condition' value="Strączkowanie">
+                <input type="checkbox" name='hair_condition' value="Strączkowanie" {% if "Strączkowanie" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
                 <span class="slider round"></span>
                 Strączkowanie
             </label>
         </li>
         <li class="list-group-item">
             <label class="switch">
-                <input type="checkbox" name='hair_condition' value="Matowość">
+                <input type="checkbox" name='hair_condition' value="Matowość" {% if "Matowość" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
                 <span class="slider round"></span>
                 Matowość
             </label>
         </li>
         <li class="list-group-item">
             <label class="switch">
-                <input type="checkbox" name='hair_condition' value="Suchość">
+                <input type="checkbox" name='hair_condition' value="Suchość" {% if "Suchość" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
                 <span class="slider round"></span>
                 Suchość
             </label>
         </li>
         <li class="list-group-item">
             <label class="switch">
-                <input type="checkbox" name='hair_condition' value="Łamanie się włosów">
+                <input type="checkbox" name='hair_condition' value="Łamanie się włosów" {% if "Łamanie się włosów" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
                 <span class="slider round"></span>
                 Łamanie się włosów
             </label>
         </li>
         <li class="list-group-item">
             <label class="switch">
-                <input type="checkbox" name='hair_condition' value="Elektryzowanie">
+                <input type="checkbox" name='hair_condition' value="Elektryzowanie" {% if "Elektryzowanie" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
                 <span class="slider round"></span>
                 Elektryzowanie
             </label>
         </li>
         <li class="list-group-item">
             <label class="switch">
-                <input type="checkbox" name='hair_condition' value="Puch">
+                <input type="checkbox" name='hair_condition' value="Puch" {% if "Puch" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
                 <span class="slider round"></span>
                 Puch
             </label>
         </li>
         <li class="list-group-item">
             <label class="switch">
-                <input type="checkbox" name='hair_condition' value="Rozprostowanie skrętu">
+                <input type="checkbox" name='hair_condition' value="Rozprostowanie skrętu" {% if "Rozprostowanie skrętu" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
                 <span class="slider round"></span>
                 Rozprostowanie skrętu
             </label>
         </li>
         <li class="list-group-item">
             <label class="switch">
-                <input type="checkbox" name='hair_condition' value="Szybkie przetłuszczanie">
+                <input type="checkbox" name='hair_condition' value="Szybkie przetłuszczanie" {% if "Szybkie przetłuszczanie" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
                 <span class="slider round"></span>
                 Szybkie przetłuszczanie
             </label>
         </li>
     </ul>
     <button type="submit">Zatwierdź</button>
+
+    <p>{% if website_state["type_recommendation"] == None %} {% else %} Rekomendowany typ odżywki: {{ website_state["type_recommendation"] }} {% endif %}</p>
 </form>
 
 <main>
