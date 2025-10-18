@@ -18,5 +18,5 @@ Program pobierający dane z rossmann.pl o linku, nazwie, cenie i składnikach ze
 6_def_prod_gemini.py
 Program, który przy użyciu AI Gemini klasyfikuje odżywki jako emolientowe, humektantowe, proteinowe lub mieszane, poprawia je na literowe skróty i tworzy plik ross_described_products.csv.
 
-app/7_web_app.py
+7_web_app.py
 Aplikacja Flask, która doradza użytkownikowi odżywkę do włosów na podstawie jej składu, ceny oraz kondycji włosów użytkownika (tabela z książki).
