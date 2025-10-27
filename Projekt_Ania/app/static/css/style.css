@@ -11,7 +11,7 @@ body {
     background-color: #E5D4FF;
 }
 
-/* Left side of the screen */
+/* Lewa część ekranu */
 
 #hair_condition_form {
     width: 400px;
@@ -77,10 +77,99 @@ body {
     margin-left: 48px;
 }
 
-/* Right side of the screen */
+/* Prawa część ekranu */
 
 #content {
     width: calc(100% - 400px);
     float: left;
     margin-left: 400px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+}
+
+#content.expand {
+    width: calc(100% - 64px);
+    margin-left: 64px;    
+}
+
+#filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#type_form {
+    padding: 20px;
+}
+#type_form > input,
+#type_form > button {
+    border-radius: 18px;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 4px;
+}
+
+#type_form > button[type='submit'] {
+    background-color: #D0A2F7;    
+}
+
+#sort {
+    display: flex;
+    flex-direction: row;
+}
+
+#dollar_symbol {
+    background-image: url("../images/dollar.png");
+    display: block;
+}
+
+#price_sort {
+    font-size: 0;
+    display: flex;
+}
+
+#price_sort > button:first-child {
+    background-image: url("../images/sort_asc.png");
+    border-right: 0;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+}
+
+#price_sort > button:last-child {
+    background-image: url("../images/sort_desc.png");
+    border-left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+#price_sort > button:disabled,
+#sort > button:disabled {
+    border-color: black;
+}
+
+#sort > button {
+    background-image: url("../images/az.png");
+    margin-left: 6px; 
+    border-radius: 5px;
+}
+
+#dollar_symbol, 
+#price_sort > button,
+#sort > button{
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 36px;
+    height: 36px;
+}
+
+
+
+#sort {
+    padding: 20px;
+}
+
+#type_recommendation_text {
+    text-align: center;
+    font-size: 20px;
 }
