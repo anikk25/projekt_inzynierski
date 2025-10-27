@@ -17,6 +17,12 @@ p: int = 0
 e: int = 0
 h: int = 0
 
+type_recommendation_translate: dict = {
+    "P": "Proteinowy",
+    "E": "Emolientowy",
+    "H": "Humektantowy"
+}
+
 class ConditionersDatabase(db.Model):
     url = db.Column(db.String(2048), primary_key=True, nullable=False)
     name = db.Column(db.String, nullable=False)
@@ -84,7 +90,7 @@ def index():
             last_conditioner_type = 'EH'
         if p == e and e == h:
             last_conditioner_type = 'PEH'
-        website_state['type_recommendation'] = last_conditioner_type
+        website_state['type_recommendation'] = type_recommendation_translate[last_conditioner_type] if last_conditioner_type in type_recommendation_translate.keys() else last_conditioner_type
         website_state['last_conditioner_type'] = last_conditioner_type
         website_state['last_selected_hair_conditions'] = request.form.getlist('hair_condition')
     elif not request.form.getlist('hair_condition') and not 'page' in request.args.keys() and not 'sort_order' in request.args.keys():
