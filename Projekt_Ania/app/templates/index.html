@@ -91,18 +91,20 @@
     <p id="type_recommendation_text">{% if website_state["type_recommendation"] == None %} {% else %} REKOMENDOWANY TYP ODŻYWKI: {{ website_state["type_recommendation"] }} {% endif %}</p>
 
     <div id="main_area">
-        <main>
+        <div id="conditioners_list">
             {% for conditioner in conditioners %}
             <a href="{{ conditioner.url }}" target="_blank">
                 <div class="conditioner">
-                    <div id="product_image"></div>
-                    <p id="conditioner_type">{{ conditioner.pred_type }}</p>
+                    <div id="top_part_conditioner">
+                        <div id="product_image"></div>
+                        <p id="conditioner_type">{{ conditioner.pred_type }}</p>
+                    </div>
                     <p id="conditioner_name">{{ conditioner.name }}</p>
                     <p id="conditioner_price">{{ conditioner.price }}</p>
                 </div>
             </a>
             {% endfor %}
-        </main>
+        </div>
 
         <form action="/" method="GET" id="pagination">
             <button type="submit" name="page" value="first" {% if website_state["current_page"] == 1 %} disabled {% endif %}></button>
