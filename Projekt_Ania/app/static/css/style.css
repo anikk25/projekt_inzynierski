@@ -163,8 +163,6 @@ body {
     height: 36px;
 }
 
-
-
 #sort {
     padding: 20px;
 }
@@ -172,4 +170,55 @@ body {
 #type_recommendation_text {
     text-align: center;
     font-size: 20px;
+}
+
+#main_area {
+    background-color: #DCBFFF;
+    border-radius: 5px;
+    margin: 24px 36px 36px 36px;
+    padding: 24px;
+}
+
+#conditioners_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+    padding: 24px;
+}
+
+#conditioners_list > a {
+    display: block;
+    background-color:#E5D4FF;
+    aspect-ratio: 1 / 1;
+    padding: 12px;
+}
+
+#top_part_conditioner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#conditioners_list > a:nth-child(odd) #product_image {
+    background-image: url("../images/product1.png");
+}
+
+#conditioners_list > a:nth-child(even) #product_image {
+    background-image: url("../images/product2.png");
+}
+
+#product_image {
+    background-size: 120px 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+}
+
+#conditioner_name {
+    font-size: 12px;
+}
+
+#conditioner_price {
+    font-size: 12px;
 }
