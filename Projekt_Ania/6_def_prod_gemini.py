@@ -69,12 +69,12 @@ def correct_type_name(type_to_correct: str) -> Optional[str]:
     
 
 if __name__ == "__main__":
-    data = read_csv("ross_products.csv") # .iloc[251:,:]
+    data = read_csv("ross_products.csv")
     data_series = data["ingredients"]
 
     header = ["URL", "name", "price", "ingredients", "pred_type"]
     csv_file = "ross_described_products.csv"
-    with open(csv_file, "w", newline="", encoding="utf-8") as f:
+    with open(csv_file, "w+", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(header)
 
@@ -90,4 +90,5 @@ if __name__ == "__main__":
                 "ingredients": data.iloc[idx, 3],
                 "pred_type": ingredient_type
             })
+
     print("Sukces!")
