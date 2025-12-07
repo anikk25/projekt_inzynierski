@@ -2,7 +2,7 @@ import time
 import random
 import csv
 from math import ceil
-from re import findall
+from regex import findall
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
@@ -138,3 +138,4 @@ if __name__ == '__main__':
 
     # Closing the driver
     driver.quit()
+
