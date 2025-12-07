@@ -26,8 +26,6 @@ def ask_gemini(desc: str) -> Optional[str|None]:
     """
     time.sleep(10)
     question = PROMPT+"\n\n"+desc
-    client = genai.Client(api_key = GEMINI_API_KEY,
-                      http_options = {'api_version': 'v1alpha'})
     try:
         response = client.models.generate_content(
             model = 'gemini-2.5-flash',
@@ -46,10 +44,15 @@ if __name__ == "__main__":
 
     header = ["URL", "type", "description", "pred_type"]
     csv_file = "2npw_described_products.csv"
-    with open(csv_file, "w", newline="", encoding="utf-8") as f:
+    with open(csv_file, "w+", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(header)
-
+    print(f"Stworzono lub wyczyszczono plik {csv_file}")
+    
+    client = genai.Client(api_key = GEMINI_API_KEY,
+                      http_options = {'api_version': 'v1alpha'})
+    print("Stworzono klienta Gemini.")
+    
     data["pred_type"] = [None for _ in range(len(data_series))]
     for idx, description in enumerate(data_series):
         ingredient_type = ask_gemini(description)
@@ -61,4 +64,5 @@ if __name__ == "__main__":
                 "description": data.iloc[idx, 2],
                 "pred_type": ingredient_type
             })
+
     print("Sukces!")
