@@ -26,11 +26,14 @@ def scrape_product_data(product_url: str) -> dict:
     # Waiting for the tag with class photoswipe__image to load
     try:
         element_data_label = WebDriverWait(driver, 10).until(
-            ec.presence_of_element_located((By.CSS_SELECTOR, '.pl-container.pl-product'))
+            ec.presence_of_element_located((By.CSS_SELECTOR, 
+            '.pl-container.pl-product'))
         )
         data_label_text: str = element_data_label.get_attribute('innerHTML')
     except Exception as e:
-        print(f"Wystąpił błąd w zbieraniu informacji o typie odżywki.\nUrl: {product_url}\nError:\n{e}")
+        print(f"""Wystąpił błąd w zbieraniu informacji o typie odżywki.
+Url: {product_url}
+Error: {e}""")
         data_label_text: str = "Brak danych"
 
     # Waiting for the tag with attribute "rte" to load
@@ -38,7 +41,9 @@ def scrape_product_data(product_url: str) -> dict:
         element_rte = driver.find_element(By.CLASS_NAME, "rte")
         rte_text: str = element_rte.text
     except Exception as e:
-        print(f"Wystąpił błąd w zbieraniu opisu odżywki.\nUrl: {product_url}\nError:\n{e}")
+        print(f"""Wystąpił błąd w zbieraniu opisu odżywki.
+Url: {product_url}
+Error: {e}""")
         rte_text: str = "Brak danych"
 
     current_url: str = driver.current_url
@@ -138,4 +143,3 @@ if __name__ == '__main__':
 
     # Closing the driver
     driver.quit()
-
