@@ -15,13 +15,14 @@ PROMPT = """Based on the following list of ingredients in a hair conditioner ple
 Return only the type, don't return any additional information."""
 
 
-def ask_gemini(desc: str) -> Optional[str|None]:
+def ask_gemini(desc: str, client) -> Optional[str|None]:
     """
     Uses the Gemini API to classify a hair conditioner based on its ingredients description
     into a specific type (emollient, humectant, protein, or a combination).
 
         Args:
             desc: A string describing the list of ingredients in the hair conditioner.
+            client: Gemini instance
 
         Returns:
             response_text: A string containing the predicted type of hair conditioner.
@@ -29,8 +30,6 @@ def ask_gemini(desc: str) -> Optional[str|None]:
     """
     time.sleep(10)
     question = PROMPT+"\n\n"+desc
-    client = genai.Client(api_key = GEMINI_API_KEY,
-                      http_options = {'api_version': 'v1alpha'})
     try:
         response = client.models.generate_content(
             model = 'gemini-2.5-flash',
@@ -40,6 +39,7 @@ def ask_gemini(desc: str) -> Optional[str|None]:
         print(e)
         return None
     else:
+        print(response)
         return response.text
 
 
@@ -77,10 +77,12 @@ if __name__ == "__main__":
     with open(csv_file, "w+", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(header)
-
+    print(f"Stworzono lub wyczyszczono plik {csv_file}")
+    gemini_client = genai.Client(api_key = GEMINI_API_KEY, http_options = {'api_version': 'v1alpha'})
+    print("Stworzono klienta Gemini.")
     data["pred_type"] = [None for _ in range(len(data_series))]
     for idx, ingredients in enumerate(data_series):
-        ingredient_type = correct_type_name(ask_gemini(ingredients))
+        ingredient_type = correct_type_name(ask_gemini(ingredients, gemini_client))
         with open(csv_file, "a", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=header)
             writer.writerow({
@@ -90,5 +92,4 @@ if __name__ == "__main__":
                 "ingredients": data.iloc[idx, 3],
                 "pred_type": ingredient_type
             })
-
     print("Sukces!")
