@@ -3,7 +3,7 @@ import random
 import csv
 from urllib.parse import urljoin
 from math import ceil
-import re
+import regex
 import requests
 import json
 
@@ -24,44 +24,44 @@ def parse_product_data(product_data: str, product_url: str) -> dict:
 
     """
 
-    name_list = re.findall(r'"metatags"[^\}]*?"title"\s*:\s*"\s*([^"]*?)\s*[\|"]', product_data, re.DOTALL)
+    name_list = regex.findall(r'"metatags"[^\}]*?"title"\s*:\s*"\s*([^"]*?)\s*[\|"]', product_data, regex.DOTALL)
     if name_list != []:
         name = name_list[0]
-        name = re.sub(r'\\u003c/?\w+\\u003e', '', name)
-        name = re.sub(r'\\u0026', '&', name)
-        name = re.sub(rf'{EMPTY_SYMBOLS}', '', name)
-        name = re.sub(rf'{SPACES}', ' ', name)
-        name = re.sub(r'\s+', ' ', name)
-        name = re.sub(r'\A\s*|\s*\Z', '', name)
+        name = regex.sub(r'\\u003c/?\w+\\u003e', '', name)
+        name = regex.sub(r'\\u0026', '&', name)
+        name = regex.sub(rf'{EMPTY_SYMBOLS}', '', name)
+        name = regex.sub(rf'{SPACES}', ' ', name)
+        name = regex.sub(r'\s+', ' ', name)
+        name = regex.sub(r'\A\s*|\s*\Z', '', name)
     else:
         name = None
         print(f"Nie znaleziono informacji o nazwie produktu: {product_url}")
 
-    price_list = re.findall(r'"offers"[^\}]*?"price"\s*:\s*([^,]*?)\s*,', product_data, re.DOTALL)
+    price_list = regex.findall(r'"offers"[^\}]*?"price"\s*:\s*([^,]*?)\s*,', product_data, regex.DOTALL)
     if price_list != []:
         price = price_list[0]
-        price = re.sub(r'\\u003c/?\w+\\u003e', '', price)
-        price = re.sub(rf'{EMPTY_SYMBOLS}', '', price)
-        price = re.sub(rf'{SPACES}', ' ', price)
-        price = re.sub(r'\s+', ' ', price)
-        price = re.sub(r'\A\s*|\s*\Z', '', price)
+        price = regex.sub(r'\\u003c/?\w+\\u003e', '', price)
+        price = regex.sub(rf'{EMPTY_SYMBOLS}', '', price)
+        price = regex.sub(rf'{SPACES}', ' ', price)
+        price = regex.sub(r'\s+', ' ', price)
+        price = regex.sub(r'\A\s*|\s*\Z', '', price)
     else:
         price = None
         print(f"Nie znaleziono informacji o cenie produktu: {product_url}")
 
-    ingredients_list = re.findall(r'"CharacterComponents"\s*,\s*"html"\s*:\s*"\s*(.*?)\s*"\s*\}', product_data, re.DOTALL)
+    ingredients_list = regex.findall(r'"CharacterComponents"\s*,\s*"html"\s*:\s*"\s*(.*?)\s*"\s*\}', product_data, regex.DOTALL)
     if ingredients_list != []:
         ingredients = ingredients_list[0]
-        ingredients = re.sub(r'\\u003c/?\w+\\u003e', '', ingredients)
-        ingredients = re.sub(r'\\u003c.*?\\u003e', '', ingredients)
-        ingredients = re.sub(r'(?i)\A(?:.*?:)?\s*(?:Składniki\s*/?\s*(?:Ingredients|aktywne)?|Ingredients)\s*:?\s*', '', ingredients)
-        ingredients = re.sub(r'(?i)\..*?\b(?:Shampoo|Szampon)\b.*?:\s*.*', '', ingredients)
-        ingredients = re.sub(r'(?i)\A.*?Mask.*?:\s*', '', ingredients)
-        ingredients = re.sub(r'\\n|\\t', ' ', ingredients)
-        ingredients = re.sub(rf'{EMPTY_SYMBOLS}', '', ingredients)
-        ingredients = re.sub(rf'{SPACES}', ' ', ingredients)
-        ingredients = re.sub(r'\s+', ' ', ingredients)
-        ingredients = re.sub(r'\A\s*|\s*\Z', '', ingredients)
+        ingredients = regex.sub(r'\\u003c/?\w+\\u003e', '', ingredients)
+        ingredients = regex.sub(r'\\u003c.*?\\u003e', '', ingredients)
+        ingredients = regex.sub(r'(?i)\A(?:.*?:)?\s*(?:Składniki\s*/?\s*(?:Ingredients|aktywne)?|Ingredients)\s*:?\s*', '', ingredients)
+        ingredients = regex.sub(r'(?i)\..*?\b(?:Shampoo|Szampon)\b.*?:\s*.*', '', ingredients)
+        ingredients = regex.sub(r'(?i)\A.*?Mask.*?:\s*', '', ingredients)
+        ingredients = regex.sub(r'\\n|\\t', ' ', ingredients)
+        ingredients = regex.sub(rf'{EMPTY_SYMBOLS}', '', ingredients)
+        ingredients = regex.sub(rf'{SPACES}', ' ', ingredients)
+        ingredients = regex.sub(r'\s+', ' ', ingredients)
+        ingredients = regex.sub(r'\A\s*|\s*\Z', '', ingredients)
     else:
         ingredients = None
         print(f"Nie znaleziono informacji o składnikach produktu: {product_url}")
@@ -135,5 +135,6 @@ if __name__ == '__main__':
                     "price": product["price"],
                     "ingredients": product["ingredients"]
                 })
+
 
     print(f"Dane zostały zapisane do pliku {csv_file}")
