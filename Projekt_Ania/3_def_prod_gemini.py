@@ -43,7 +43,7 @@ if __name__ == "__main__":
     data_series = data["description"]
 
     header = ["URL", "type", "description", "pred_type"]
-    csv_file = "2npw_described_products.csv"
+    csv_file = "npw_described_products.csv"
     with open(csv_file, "w+", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(header)
@@ -66,3 +66,4 @@ if __name__ == "__main__":
             })
 
     print("Sukces!")
+
