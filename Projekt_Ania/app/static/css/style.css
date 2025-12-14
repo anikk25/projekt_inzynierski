@@ -249,6 +249,11 @@ body {
     font-size: 14px;
     font-weight: 600;
     margin-top: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #conditioners_list > a abbr {
@@ -262,6 +267,7 @@ body {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-bottom: 24px;
 }
 
 #conditioner_price {
