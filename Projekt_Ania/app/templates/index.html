@@ -100,7 +100,7 @@
                         <p id="conditioner_type">{{ conditioner.pred_type }}</p>
                     </div>
                     {% set name_fragments = conditioner.name.split(',') %}
-                    <p id="conditioner_brand">{{ name_fragments[0] }}</p>
+                    <abbr title="{{ name_fragments[0] }}"> <p id="conditioner_brand">{{ name_fragments[0] }}</p> </abbr>
                     {% if name_fragments | length > 1 %} <abbr title="{{ name_fragments[1:] | join(', ') }}"> <p id="conditioner_name">{{ name_fragments[1:] | join(', ') }}</p> </abbr> {% endif %}
                     <p id="conditioner_price">{{ conditioner.price }} zł</p>
                 </div>
