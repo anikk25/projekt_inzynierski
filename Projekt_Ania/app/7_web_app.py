@@ -30,6 +30,7 @@ class ConditionersDatabase(db.Model):
     ingredients = db.Column(db.String, nullable=False)
     pred_type = db.Column(db.String(3), nullable=False)
 
+
     def __repr__(self):
         return '<Conditioner %r>' % self.url
 
@@ -42,10 +43,10 @@ def index():
     e = 0
     h = 0
 
-    # Rekomendacja typu odżywki
+    # Recommendation of the hair conditioner's type
 
-    # Wyliczanie punktów do rekomendowanych typów odżywek na podstawie zaznaczonych kondycji włosów
-    if request.form.getlist('hair_condition'): # Jeśli została zaznaczona jakakolwiek opcja kondycji włosów
+    # Calculating points for recommended conditioner types based on selected hair conditions
+    if request.form.getlist('hair_condition'): # If any hair condition option is selected
         for condition in request.form.getlist('hair_condition'):
             if condition == "Nadmierne obciążenie":
                 p+=1
@@ -75,7 +76,7 @@ def index():
                 p+=1
                 h+=1
     
-        # Przypisanie, na podstawie punktów, rekomendowanego typu odżywki
+        # Assigning the recommended type of hair conditioner based on points
         if p > e and p > h:
             last_conditioner_type = 'P'
         if e > p and e > h:
@@ -101,12 +102,12 @@ def index():
             last_conditioner_type = None
 
 
-    # Zmiana wyszukiwanego typu odżywki
+    # Changing the searched hair conditioner type
     if 'conditioner_type' in request.args.keys():
         last_conditioner_type = request.args['conditioner_type']
         website_state['last_conditioner_type'] = last_conditioner_type
 
-    # Zmiana strony
+    # Changing the page
     if last_conditioner_type and last_conditioner_type != "ALL":
         total_conditioners = ConditionersDatabase.query.where(ConditionersDatabase.pred_type == last_conditioner_type).count()
     else:
@@ -114,7 +115,7 @@ def index():
 
     website_state['total_pages'] = ceil(total_conditioners/page_size)
     
-    if 'page' in request.args.keys():  # Ostatnio użytkownik chciał zmienić stronę
+    if 'page' in request.args.keys():  # Recently, a user wanted to change the page
         if request.args['page'] == 'next':
             page += 1
         elif request.args['page'] == 'previous':
@@ -123,7 +124,7 @@ def index():
             page = 1
         elif request.args['page'] == 'last':
             page = website_state['total_pages']
-    else:  # Użytkownik wykonał inną akcję niż zmiana strony
+    else:  # The user performed an action other than changing the page
         page = 1
 
 
@@ -133,7 +134,7 @@ def index():
     website_state['can_click_next'] = True if page*page_size < total_conditioners else False
 
     
-    # Sortowanie danych po cenie
+    # Sorting data by price
     if 'sort_order' in request.args.keys():
         if request.args['sort_order'] == 'ASC':
             sort_order = "ASC"
@@ -143,7 +144,7 @@ def index():
             sort_order = None
         website_state['sort_order'] = sort_order
 
-    # Filtrowanie danych
+    # Data filtering
     if last_conditioner_type and last_conditioner_type != "ALL":
         if sort_order == "ASC":
             conditioners = ConditionersDatabase.query.where(ConditionersDatabase.pred_type == last_conditioner_type).order_by(ConditionersDatabase.price.asc()).limit(page_size).offset((page-1)*page_size).all()
@@ -158,7 +159,6 @@ def index():
             conditioners = ConditionersDatabase.query.order_by(ConditionersDatabase.price.desc()).limit(page_size).offset((page-1)*page_size).all()
         else:
             conditioners = ConditionersDatabase.query.order_by(ConditionersDatabase.name).limit(page_size).offset((page-1)*page_size).all()
-
 
     return render_template('index.html', conditioners=conditioners, website_state=website_state)
 
