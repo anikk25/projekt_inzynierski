@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>
+    Wyszukiwarka odżywek
+</title>
+{% endblock %}
+
+{% block body %}
+<form action="/" method="POST" id="hair_condition_form" class="closed">
+    <div id="hair_condition_form_top">
+        <div id="hair_condition_form_header_container">
+            <h3>Rekomendowanie typu</h3>
+            <small>Wybierz kondycję włosów</small>
+        </div>
+        <div id="toggle_hair_condition_form" onclick="toggleHairConditionForm()"></div>
+    </div>
+    <div id="hair_condition_options_list">
+        <div>
+            <input type="checkbox" name='hair_condition' value="Nadmierne obciążenie" {% if "Nadmierne obciążenie" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>          
+            Nadmierne obciążenie
+        </div>
+    
+        <div>
+            <input type="checkbox" name='hair_condition' value="Strączkowanie" {% if "Strączkowanie" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
+            Strączkowanie
+        </div>
+    
+        <div>
+            <input type="checkbox" name='hair_condition' value="Matowość" {% if "Matowość" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
+            Matowość
+        </div>
+    
+        <div>
+            <input type="checkbox" name='hair_condition' value="Suchość" {% if "Suchość" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
+            Suchość
+        </div>
+    
+        <div>
+            <input type="checkbox" name='hair_condition' value="Łamanie się włosów" {% if "Łamanie się włosów" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
+            Łamanie się włosów
+        </div>
+    
+        <div>
+            <input type="checkbox" name='hair_condition' value="Elektryzowanie" {% if "Elektryzowanie" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
+            Elektryzowanie
+        </div>
+    
+        <div>
+            <input type="checkbox" name='hair_condition' value="Puch" {% if "Puch" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
+            Puch
+        </div>
+    
+        <div>
+            <input type="checkbox" name='hair_condition' value="Rozprostowanie skrętu" {% if "Rozprostowanie skrętu" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
+            Rozprostowanie skrętu
+        </div>
+    
+        <div>
+            <input type="checkbox" name='hair_condition' value="Szybkie przetłuszczanie" {% if "Szybkie przetłuszczanie" in website_state["last_selected_hair_conditions"] %} checked {% endif %}>
+            Szybkie przetłuszczanie
+        </div>
+
+    </div>
+    <button type="submit">Zatwierdź</button>
+</form>
+
+<div id="content" class="expand">
+    <div id="filters">
+        <form action="/" method="GET" id="type_form">
+            <input type="submit" name="conditioner_type" value="PEH" {% if website_state["last_conditioner_type"] == "PEH" %} disabled {% endif %}>
+            <input type="submit" name="conditioner_type" value="PE" {% if website_state["last_conditioner_type"] == "PE" %} disabled {% endif %}>
+            <input type="submit" name="conditioner_type" value="EH" {% if website_state["last_conditioner_type"] == "EH" %} disabled {% endif %}>
+            <input type="submit" name="conditioner_type" value="PH" {% if website_state["last_conditioner_type"] == "PH" %} disabled {% endif %}>
+            <input type="submit" name="conditioner_type" value="P" disabled>
+            <input type="submit" name="conditioner_type" value="E" {% if website_state["last_conditioner_type"] == "E" %} disabled {% endif %}>
+            <input type="submit" name="conditioner_type" value="H" disabled>
+            <button type="submit" name="conditioner_type" value="ALL" {% if website_state["last_conditioner_type"] == "ALL" or "last_conditioner_type" not in website_state.keys() %} disabled {% endif %}>&#8634;</button>
+        </form>
+
+        <form action="/" method="GET" id="sort">
+            <i id="dollar_symbol"></i>
+            <div id="price_sort">
+                <button type="submit" name="sort_order" value="ASC" {% if website_state["sort_order"] == "ASC" %} disabled {% endif %}></button>
+                <button type="submit" name="sort_order" value="DESC" {% if website_state["sort_order"] == "DESC" %} disabled {% endif %}></button>
+            </div>
+            <button type="submit" name="sort_order" value="DEFAULT" {% if not website_state["sort_order"] or "sort_order" not in website_state.keys() %} disabled {% endif %}></button>
+        </form>
+    </div>
+
+    <p id="type_recommendation_text">{% if website_state["type_recommendation"] == None %} {% else %} REKOMENDOWANY TYP ODŻYWKI: {{ website_state["type_recommendation"] }} {% endif %}</p>
+
+    <div id="main_area">
+        <div id="conditioners_list">
+            {% for conditioner in conditioners %}
+            <a href="{{ conditioner.url }}" target="_blank">
+                <div class="conditioner">
+                    <div id="top_part_conditioner">
+                        <div id="product_image"></div>
+                        <p id="conditioner_type">{{ conditioner.pred_type }}</p>
+                    </div>
+                    {% set name_fragments = conditioner.name.split(',') %}
+                    <abbr title="{{ name_fragments[0] }}"> <p id="conditioner_brand">{{ name_fragments[0] }}</p> </abbr>
+                    {% if name_fragments | length > 1 %} <abbr title="{{ name_fragments[1:] | join(', ') }}"> <p id="conditioner_name">{{ name_fragments[1:] | join(', ') }}</p> </abbr> {% endif %}
+                    <p id="conditioner_price">{{ conditioner.price }} zł</p>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+
+        <form action="/" method="GET" id="pagination">
+            <button type="submit" name="page" value="first" {% if website_state["current_page"] == 1 %} disabled {% endif %}></button>
+
+            <button type="submit" name="page" value="previous" {% if website_state["can_click_previous"] == False %} disabled {% endif %}></button>
+            
+            <p>
+                {{ website_state['current_page'] }} / {{ website_state['total_pages'] }}
+            </p>
+
+            <button type="submit" name="page" value="next" {% if website_state["can_click_next"] == False %} disabled {% endif %}></button>
+
+            <button type="submit" name="page" value="last" {% if website_state["current_page"] == website_state['total_pages'] %} disabled {% endif %}></button>
+        </form>
+        <div style="display:none;">
+            <a href="https://www.flaticon.com/packs/color-products-bottle" title="conditioner icons">Conditioner icons created by Freepik - Flaticon</a>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function toggleHairConditionForm(){
+        var hairConditionForm = document.getElementById("hair_condition_form");
+        hairConditionForm.classList.toggle("closed");
+        var content = document.getElementById("content");
+        content.classList.toggle("expand");
+    }
+</script>
+{% endblock %}
