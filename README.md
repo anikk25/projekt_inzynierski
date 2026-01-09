@@ -1,4 +1,4 @@
-##**Projekt inżynierski**
+#**Projekt inżynierski**
 
 **1_scraping.py**
 Program pobierający dane z napieknewlosy.pl o linku, typie i opisie ze strony każdej odżywki, które później zapisuje w pliku csv (npw_products.csv).
