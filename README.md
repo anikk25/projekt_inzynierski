@@ -1,3 +1,5 @@
+**Projekt inżynierski**
+
 1_scraping.py Program pobierający dane z napieknewlosy.pl o linku, typie i opisie ze strony każdej odżywki, które później zapisuje w pliku csv (npw_products.csv).
 
 2_data_cleaning.ipynb Program, który na podstawie pobranych danych o typie nadaje odpowiednie im nazwy oraz wyciąga informacje o składnikach z opisów produktów, czyści je z niestandardowych symboli, a także tworzy plik csv (products_cleaned.csv).
